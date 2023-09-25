@@ -1,5 +1,8 @@
 
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { savemostDonation } from "../Utility/localStorage";
 
 
 const DonatDetail = () => {
@@ -7,6 +10,11 @@ const DonatDetail = () => {
     const {id} =useParams()
     const idInt = parseInt(id)
     const donate =dotates.find(donate=>donate.id === idInt)
+    const handleDonate =()=>{
+        savemostDonation(idInt)
+
+        toast("You have successfully danate");
+    }
     return (
         <div>
             
@@ -14,7 +22,7 @@ const DonatDetail = () => {
                 <div className="relative ">
                     <img className="w-full h-[550px]" src={donate.picture} alt="" />
                     <div className="absolute -mt-20 ml-10  ">
-                    <button className=" text-xl text-white p-3 rounded-lg " style={{backgroundColor:donate.text_color}}>Donate $ <span>{donate.price}</span></button>
+                    <button onClick={handleDonate} className=" text-xl text-white p-3 rounded-lg " style={{backgroundColor:donate.text_color}}>Donate $ <span>{donate.price}</span></button>
                     </div>
                 </div>
                 <div>
@@ -22,6 +30,7 @@ const DonatDetail = () => {
                     <p>{donate.description}</p>
                 </div>
             </div>
+            <ToastContainer />
             
         </div>
     );
