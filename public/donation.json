@@ -17,7 +17,7 @@
       "title": "Good education",
       "category": "Education",
       "text_color":"#FF444A",
-      "category_bg_color": "#ff7f83",
+      "category_bg_color": "#ffa6a9",
       "card_bg_color": "#ffbabc",
       "button_bg_color": "#FF444A",
       "description": "A beautiful vintage dress with intricate lace details.",
@@ -49,16 +49,17 @@
     },
     {
       "id": 1005,
-      "picture": "https://i.ibb.co/qmW6N50/Health.png",
-      "title": "Clean water for children",
-      "category": "Health",
-      "text_color":"#0052FF",
-      "category_bg_color": "#6295ff",
-      "card_bg_color": "#9dbdff",
-      "button_bg_color": "#0052FF",
-      "description": "A stylish leather handbag with multiple compartments.",
-      "price": 199.99
+      "picture": "https://i.ibb.co/w4wVSqr/Education.png",
+      "title": "Good education",
+      "category": "Education",
+      "text_color":"#FF444A",
+      "category_bg_color": "#ffa6a9",
+      "card_bg_color": "#ffbabc",
+      "button_bg_color": "#FF444A",
+      "description": "A high-performance working laptop with a powerful graphics card.",
+      "price": 420
     },
+    
     {
       "id": 1006,
       "picture": "https://i.ibb.co/fMXpQP4/Clothing.png",
@@ -73,16 +74,17 @@
     },
     {
       "id": 1007,
-      "picture": "https://i.ibb.co/w4wVSqr/Education.png",
-      "title": "Good education",
-      "category": "Education",
-      "text_color":"#FF444A",
-      "category_bg_color": "#ff7f83",
-      "card_bg_color": "#ffbabc",
-      "button_bg_color": "#FF444A",
-      "description": "A high-performance working laptop with a powerful graphics card.",
-      "price": 420
+      "picture": "https://i.ibb.co/qmW6N50/Health.png",
+      "title": "Clean water for children",
+      "category": "Health",
+      "text_color":"#0052FF",
+      "category_bg_color": "#6295ff",
+      "card_bg_color": "#9dbdff",
+      "button_bg_color": "#0052FF",
+      "description": "A stylish leather handbag with multiple compartments.",
+      "price": 199.99
     },
+    
     {
       "id": 1008,
       "picture": "https://i.ibb.co/ckzn7DB/Food.png",
@@ -137,7 +139,7 @@
       "title": "Good education",
       "category": "Education",
       "text_color":"#FF444A",
-      "category_bg_color": "#ff7f83",
+      "category_bg_color": "#ffa6a9",
       "card_bg_color": "#ffbabc",
       "button_bg_color": "#FF444A",
       "description": "A comprehensive cookware set for all your culinary needs.",
