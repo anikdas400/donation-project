@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredDonation } from "../Utility/localStorage";
+import Favourite from "../Favorite/Favourite";
 
 
 const Donation = () => {
     const donations = useLoaderData()
     const [donateAdd,setDonateAdd]=useState([])
+    const [datalength,setDataLength]=useState(4)
     useEffect(()=>{
         const storedDonatrId = getStoredDonation()
-        // if(donations.length > 0){
+        if(donations.length > 0){
         //     const addDonates = donations.filter(addDonate=>storedDonatrId.includs(addDonate.id))
 
         //     setDonateAdd(addDonates)
@@ -20,28 +22,25 @@ const Donation = () => {
             }
         }
         setDonateAdd(addDonates)
+    }
         
         
         
     }
     ,[])
     return (
-        <div>
-            <h2 className="text-3xl">this is donation:{donateAdd.length}</h2>
+        <div className="mb-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            
             {
-                donateAdd.map(donat => <span className="" key={donat.id}><div >
-                    <div className="grid grid-cols-2"><img src={donat.picture} alt="" />
-                    <div>
-                        <h2>{donat.category}</h2>
-                        <h3>{donat.title}</h3>
-                        <p>${donat.price}</p>
-                        <button>View Details</button>
-                    </div>
-                    </div>
-                    
-                    </div></span>)
+                donateAdd.slice(0,datalength).map(donate=><Favourite key={donate.id} donate={donate}></Favourite>)
             }
             
+        </div>
+        <div className={datalength===donateAdd.length ? 'hidden':'text-center mt-3'}>
+                <button className="bg-green-700 hover:text-green-700 btn text-white" onClick={()=>setDataLength(donateAdd.length)}>See All</button>
+            </div>
+
         </div>
     );
 };

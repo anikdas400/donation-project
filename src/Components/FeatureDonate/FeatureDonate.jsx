@@ -17,9 +17,7 @@ const FeatureDonate = () => {
             {
                 donates.map(donate =><Donate key={donate.id} donate={donate}></Donate>)
             }
-            {/* <div className={datalength===donates.length ? 'hidden':''}>
-                <button className="bg-green-800 btn text-white" onClick={()=>setDatalength(donates.length)}>See All</button>
-            </div> */}
+            
 
             
         </div>
