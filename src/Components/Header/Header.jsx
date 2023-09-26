@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
 
     const Links = <>
-        <li><NavLink to='/' className={({ isActive, isPending }) =>
+        <li className="text-lg"><NavLink to='/' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-fuchsia-800 font-bold underline text-md" : ""
         }>Home</NavLink></li>
-        <li><NavLink to='/donation' className={({ isActive, isPending }) =>
+        <li className="text-lg"><NavLink to='/donation' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-fuchsia-800 font-bold underline text-md" : ""
         }>Donation</NavLink></li>
-        <li><NavLink to='/statistics' className={({ isActive, isPending }) =>
+        <li className="text-lg"><NavLink to='/statistics' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-fuchsia-800 font-bold underline text-md" : ""
         }>Statistics</NavLink></li>
     </>

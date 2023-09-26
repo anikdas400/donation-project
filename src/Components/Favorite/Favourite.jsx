@@ -1,5 +1,6 @@
 
 
+
 const Favourite = ({ donate }) => {
     const { id, picture, category, title, card_bg_color, text_color, category_bg_color,price } = donate
     return (
@@ -10,7 +11,7 @@ const Favourite = ({ donate }) => {
             <p className="text-lg font-bold">{title}</p>
             <h3 className="text-lg font-semibold" style={{color:text_color}}>${price}</h3>
                 <div className="card-actions">
-                    <button style={{backgroundColor:text_color}} className="btn text-white">View Details</button>
+                   <button style={{backgroundColor:text_color}} className="btn text-white">View Details</button>
                 </div>
             </div>
             
