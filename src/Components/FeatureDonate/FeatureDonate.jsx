@@ -7,7 +7,7 @@ const FeatureDonate = () => {
     const [donates,setDonates]=useState([])
     
     useEffect(()=>{
-        fetch('donation.json')
+        fetch('dona.json')
         .then(res =>res.json())
         .then(data=>setDonates(data))
     }

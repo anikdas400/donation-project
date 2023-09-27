@@ -25,7 +25,7 @@ const Donation = () => {
         
         
     }
-    ,[])
+    ,[donations])
     return (
         <div className="mb-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -35,7 +35,7 @@ const Donation = () => {
             }
             
         </div>
-        <div className={datalength===donateAdd.length ? 'hidden':''}>
+        <div className={datalength === donateAdd.length ? 'hidden':''}>
                 <div className="text-center mt-3">
                 <button className="bg-green-700 hover:text-green-700 btn text-white " onClick={()=>setDataLength(donateAdd.length)}>See All</button>
                 </div>
