@@ -11,9 +11,7 @@ const Donation = () => {
     useEffect(()=>{
         const storedDonatrId = getStoredDonation()
         if(donations.length > 0){
-        //     const addDonates = donations.filter(addDonate=>storedDonatrId.includs(addDonate.id))
-
-        //     setDonateAdd(addDonates)
+        
         const addDonates =[]
         for(const id of storedDonatrId){
             const donate =donations.find(donate=>donate.id ===id)
@@ -37,8 +35,10 @@ const Donation = () => {
             }
             
         </div>
-        <div className={datalength===donateAdd.length ? 'hidden':'text-center mt-3'}>
-                <button className="bg-green-700 hover:text-green-700 btn text-white" onClick={()=>setDataLength(donateAdd.length)}>See All</button>
+        <div className={datalength===donateAdd.length ? 'hidden':''}>
+                <div className="text-center mt-3">
+                <button className="bg-green-700 hover:text-green-700 btn text-white " onClick={()=>setDataLength(donateAdd.length)}>See All</button>
+                </div>
             </div>
 
         </div>
